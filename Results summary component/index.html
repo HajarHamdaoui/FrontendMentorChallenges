@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @media only screen and (max-width: 1064px) {
+      .card2,.card1{
+        margin:15%;
+        height:70vh;
+        width:45vw;
+  
+      }
+      .cover{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+
+
+
+      }
+      body{
+        display: flex;
+
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+
+      }
+    }
+    @media only screen and (min-width: 1064px) {    
+      .cover{
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      
+
+    }
+    .card2{
+      margin-left:-10px;
+      height:70vh;
+
+
+    }
+  }
+
+    .result-number{
+      margin:10px;
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+      border-radius:50%;
+      height:200px;
+      width:200px;
+      background-color:#4927d4;
+      font-size:40px;
+      font-weight: 900;
+    }
+    .card1{
+      display:flex;
+      align-items:center; 
+      flex-direction:column;
+      background-color:#4d38f5;
+      color:white;
+      padding:25px;
+      border-radius:20px;
+      
+    }
+.card2{
+      position:relative;
+      z-index:-1;
+      display:flex; 
+      flex-direction:column;
+      padding:30px 60px;
+     background-color:white;
+
+      border-radius:20px;
+      box-shadow: -1px 1px 5px black;
+
+
+    }
+    .title{
+      margin:30px 0;
+    }
+
+.of-100{
+  font-size:16px;
+}
+.great{
+  font-weight:700;
+  font-size:30px;
+  margin:20px;
+}
+.description{
+  width:75%;
+  text-align:center;
+}
+.reaction,.memory, .verbal, .visual{
+  display: flex;
+  justify-content: space-between;
+  margin:10px 0;
+  padding:10px;
+  border-radius: 10px;
+}
+.reaction{
+  background-color:#fff7f4;
+
+}
+.reaction-title{
+  color:#da6567;
+}
+.memory{
+  background-color: #fefaf2;
+}
+.memory-title{
+  color:#fbc465;
+}
+
+.verbal{
+  background-color: #f2fafa;
+}
+.verbal-title{
+  color:#26a081;
+}
+.visual{
+  background-color: #f2f3fc;
+}
+.visual-title{
+  color:#393e9e;
+}
+.group{
+  display:flex;
+}
+.submit{
+  background-color: #4434f0;
+  color:white;
+  padding: 10px;
+  border-radius: 5px;
+  border:transparent;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class = "cover">
+  <div class="card1">
+    <div class ="result-text">Your Result</div>
+    <div class="result-number"> 76     <div class="of-100">of 100</div> </div>
+    
+
+  
+    
+  
+    <div class="great">Great</div> 
+    <div class="description">You scored higher than 65% of the people who have taken these tests.</div>
+  </div>
+
+ <div class="card2">
+  <div class="title">Summary</div>
+  <div class="reaction"> <div class = "group"><img src="assets/images/icon-reaction.svg" alt="">  <div class="reaction-title"> Reaction</div></div> <div class="note">80 / 100</div>
+    </div>
+  <div class="memory">  <div class = "group"><img src="assets/images/icon-memory.svg" alt=""><div class="memory-title"> Memory</div></div> <div class="note">92 / 100</div>
+    </div>
+  <div class="verbal"> <div class = "group"><img src="assets/images/icon-verbal.svg" alt=""><div class="verbal-title"> Verbal</div></div>  <div class="note">61 / 100</div>
+    </div>
+  <div class="visual"> <div class = "group"><img src="assets/images/icon-visual.svg" alt=""><div class="visual-title"> Visual</div> </div> <div class="note">72 / 100</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  <input type="submit"  value = "continue" class="submit">
+  
+</div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
